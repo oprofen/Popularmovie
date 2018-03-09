@@ -32,7 +32,7 @@ public class DetailActivity extends AppCompatActivity {
         mVoteAverage.setText(intent.getStringExtra("rating"));
         mReleaseDate.setText(intent.getStringExtra("release_date"));
         mOverview.setText(intent.getStringExtra("overview"));
-        String url = "http://image.tmdb.org/t/p/w185/" + intent.getStringExtra("poster");
+        String url = "http://image.tmdb.org/t/p/w342/" + intent.getStringExtra("poster");
         Picasso.with(this)
                 .load(url)
                 .into(mPoster);
